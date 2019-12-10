@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="341.0" prefWidth="462.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.Menu">
+   <children>
+      <Button layoutX="105.0" layoutY="122.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="210.0" text="Узнать расписание" onAction="#OpenShedule" />
+      <Button layoutX="105.0" layoutY="171.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="210.0" text="Узнать расписание преподавателя" onAction="#OpenTeach"/>
+      <Button layoutX="105.0" layoutY="220.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="210.0" text="Узнать расписание аудитории" onAction="#OpenAudior" />
+   </children>
+</AnchorPane>

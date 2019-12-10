@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="654.0" prefWidth="542.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.Teach">
+   <children>
+      <TextField fx:id="textField" layoutX="260.0" layoutY="33.0" prefHeight="25.0" prefWidth="207.0" />
+      <Button layoutX="260.0" layoutY="107.0" mnemonicParsing="false" onAction="#GetTeacher" prefHeight="25.0" prefWidth="207.0" text="Узнать расписание преподавателя" />
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="154.0" prefHeight="524.0" prefWidth="651.0">
+        <columns>
+
+            <TableColumn text="День">
+                <cellValueFactory><PropertyValueFactory property="day" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Номер пары">
+                <cellValueFactory><PropertyValueFactory property="lessonNumber" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Неделя">
+                <cellValueFactory><PropertyValueFactory property="week" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="130" text="Предмет">
+                <cellValueFactory><PropertyValueFactory property="subject" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn text="Вид">
+                <cellValueFactory><PropertyValueFactory property="type" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="120" text="ФИО преподавателя">
+                <cellValueFactory><PropertyValueFactory property="teacher" />
+                </cellValueFactory>
+            </TableColumn>
+
+
+            <TableColumn text="Аудитория">
+                <cellValueFactory><PropertyValueFactory property="auditory" />
+                </cellValueFactory>
+            </TableColumn>
+
+        </columns>
+      </TableView>
+      <Label layoutX="260.0" layoutY="14.0" text="Введите ФИО преподавателя:" />
+      <Label layoutX="260.0" layoutY="65.0" text="(Формат ввода: Иванов А.А.)" />
+   </children>
+</AnchorPane>
